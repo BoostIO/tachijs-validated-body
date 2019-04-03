@@ -1,0 +1,61 @@
+{
+  "name": "tachijs-validated-body",
+  "version": "1.0.0-0",
+  "description": "Request body validation decorator for tachijs",
+  "main": "dist",
+  "files": [
+    "dist/**/*",
+    "!dist/specs/**/*"
+  ],
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "format": "prettier --write 'src/**/*.ts'",
+    "lint": "npm run lint:prettier && npm run lint:tslint",
+    "lint:prettier": "prettier --check 'src/**/*.ts'",
+    "lint:tslint": "tslint -p .",
+    "test": "npm run lint && npm run test:coverage",
+    "test:watch": "jest --watchAll",
+    "test:coverage": "jest --coverage",
+    "prepublishOnly": "npm run test && npm run build"
+  },
+  "keywords": [
+    "expressjs",
+    "typescript",
+    "decorators",
+    "validator",
+    "validation",
+    "class-validator"
+  ],
+  "author": "Junyoung Choi <fluke8259@gmail.com> (https://github.com/rokt33r)",
+  "homepage": "https://github.com/BoostIO/tachijs-validated-body#readme",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/body-parser": "^1.17.0",
+    "@types/express": "^4.16.1",
+    "@types/jest": "^24.0.11",
+    "@types/node": "^11.11.6",
+    "@types/prettier": "^1.16.1",
+    "@types/supertest": "^2.0.7",
+    "body-parser": "^1.18.3",
+    "class-transformer": "^0.2.0",
+    "class-transformer-validator": "^0.6.0",
+    "class-validator": "^0.9.1",
+    "jest": "^24.5.0",
+    "prettier": "^1.16.4",
+    "reflect-metadata": "^0.1.13",
+    "rimraf": "^2.6.3",
+    "supertest": "^4.0.2",
+    "tachijs": "^1.0.0-1",
+    "ts-jest": "^24.0.1",
+    "ts-node": "^8.0.3",
+    "tslint": "^5.14.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.3.4000"
+  },
+  "peerDependencies": {
+    "class-transformer": "^0.2.0",
+    "class-transformer-validator": "^0.6.0",
+    "class-validator": "^0.9.1",
+    "tachijs": "^1.0.0-1"
+  }
+}
