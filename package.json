@@ -1,6 +1,6 @@
 {
   "name": "tachijs-validated-body",
-  "version": "1.0.0-0",
+  "version": "1.0.0-1",
   "description": "Request body validation decorator for tachijs",
   "main": "dist",
   "files": [
@@ -56,6 +56,7 @@
     "class-transformer": "^0.2.0",
     "class-transformer-validator": "^0.6.0",
     "class-validator": "^0.9.1",
-    "tachijs": "^1.0.0-1"
+    "tachijs": "^1.0.0-1",
+    "reflect-metadata": "^0.1.13"
   }
 }
