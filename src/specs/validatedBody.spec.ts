@@ -2,7 +2,7 @@ import 'reflect-metadata'
 import { tachijs, controller, httpPost, ConfigSetter } from 'tachijs'
 import { IsString } from 'class-validator'
 import request from 'supertest'
-import bodyParser = require('body-parser')
+import bodyParser from 'body-parser'
 import { ErrorRequestHandler } from 'express'
 import validatedBody from '..'
 
